@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daniel Skorski</title>
+  <meta name="description" content="Portfolio - Daniel Skorski (PCB Design, LTspice, electronics)" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" onclick="scrollToTop()">
+        <img src="assets/profile.jpg" alt="profile" class="avatar">
+        <strong class="brand-name">Daniel Skorski</strong>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#projects" id="nav-projects"></a>
+        <a href="#about" id="nav-about"></a>
+        <a href="#contact" id="nav-contact"></a>
+      </nav>
+
+      <div class="lang-wrap">
+        <select id="lang-select" aria-label="Wybór języka"></select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1 id="hero-title"></h1>
+        <p id="hero-subtitle" class="muted"></p>
+        <div class="hero-cta">
+          <a href="#projects"><button id="hero-cta-work" class="btn"> </button></a>
+          <a href="#contact"><button id="hero-cta-quote" class="btn outline"> </button></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="assets/hero.jpg" alt="hero" class="hero-img">
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal container">
+      <h2 id="projects-title"></h2>
+      <p class="muted" id="projects-desc"></p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="assets/project1.jpg" alt="Project 1">
+          <div class="project-body">
+            <h3>WM100 — Class AB 100W Power Amplifier</h3>
+            <p class="muted">High-fidelity Class AB amplifier delivering 100W of clean audio power.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/project2.jpg" alt="Project 2">
+          <div class="project-body">
+            <h3>ZI800 — 800W Switched-Mode Power Supply</h3>
+            <p class="muted">Reliable 800W SMPS designed for cost-effective audio power delivery.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/project3.jpg" alt="Project 3">
+          <div class="project-body">
+            <h3>FM25060 — Inverter for Hasler Motors</h3>
+            <p class="muted">Compact inverter for Hasler RT9 speedometer motors with Arduino support.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal container">
+      <h2 id="about-title"></h2>
+      <p id="about-p1"></p>
+      <p id="about-p2" class="muted"></p>
+    </section>
+
+    <section id="contact" class="section reveal container">
+      <h2 id="contact-title"></h2>
+      <p id="contact-email"></p>
+      <button id="contact-quote" class="btn outline"></button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Daniel Skorski</p>
+    </div>
+  </footer>
+</body>
+</html>
